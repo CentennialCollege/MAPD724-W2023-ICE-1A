@@ -1,7 +1,7 @@
 import GameplayKit
 import SpriteKit
 
-class GameObject : SKSpriteNode
+class GameObject : SKSpriteNode, GameProtocol
 {
     // public instance members
     var horizontalSpeed: CGFloat?
@@ -41,6 +41,7 @@ class GameObject : SKSpriteNode
     
     // Life-Cycle Functions
     
+    
     func Start()
     {
         
@@ -61,5 +62,6 @@ class GameObject : SKSpriteNode
     {
         
     }
+    
     
 }
