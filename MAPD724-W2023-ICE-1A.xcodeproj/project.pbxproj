@@ -33,6 +33,7 @@
 		E9FCE7F329761BE4002773A5 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9FCE7E029761BE4002773A5 /* thunder.mp3 */; };
 		E9FCE7F429761BE4002773A5 /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9FCE7E129761BE4002773A5 /* yay.mp3 */; };
 		E9FCE7F529761BE4002773A5 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FCE7E329761BE4002773A5 /* Dock51.ttf */; };
+		E9FCE7F829761DAC002773A5 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7F729761DAC002773A5 /* GameObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		E9FCE7E029761BE4002773A5 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
 		E9FCE7E129761BE4002773A5 /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
 		E9FCE7E329761BE4002773A5 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
+		E9FCE7F729761DAC002773A5 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E9FCE7AB29761795002773A5 = {
 			isa = PBXGroup;
 			children = (
+				E9FCE7F629761D89002773A5 /* Core */,
 				E9FCE7CE29761BE4002773A5 /* Assets */,
 				E9FCE7B629761795002773A5 /* MAPD724-W2023-ICE-1A */,
 				E9FCE7B529761795002773A5 /* Products */,
@@ -155,6 +158,14 @@
 				E9FCE7E329761BE4002773A5 /* Dock51.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		E9FCE7F629761D89002773A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9FCE7F729761DAC002773A5 /* GameObject.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FCE7F829761DAC002773A5 /* GameObject.swift in Sources */,
 				E9FCE7BE29761795002773A5 /* GameScene.swift in Sources */,
 				E9FCE7C029761795002773A5 /* GameViewController.swift in Sources */,
 				E9FCE7B829761795002773A5 /* AppDelegate.swift in Sources */,
