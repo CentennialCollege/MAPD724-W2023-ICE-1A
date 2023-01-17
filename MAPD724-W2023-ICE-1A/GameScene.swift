@@ -5,26 +5,33 @@ import GameplayKit
 
 class GameScene: SKScene
 {
+    // instance variables
+    var ocean : Ocean?
     
     override func sceneDidLoad()
     {
-        print("Loaded GameScene")
+        name = "GAME"
+        
+        // add the ocean to the scene
+        ocean = Ocean() // instantiates a new Ocean and allocates memory
+        ocean?.Start()
+        addChild(ocean!)
     }
     
     
     func touchDown(atPoint pos : CGPoint)
     {
-        print("Touch Down")
+        
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        print("Touch Moved")
+        
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        print("Touch Up")
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -47,9 +54,9 @@ class GameScene: SKScene
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
-    
+    // triggered every frame - once every 16ms
     override func update(_ currentTime: TimeInterval)
     {
-
+        ocean?.Update()
     }
 }
