@@ -6,16 +6,24 @@ import GameplayKit
 class GameScene: SKScene
 {
     // instance variables
-    var ocean : Ocean?
+    var ocean1 : Ocean?
+    var ocean2 : Ocean?
     
     override func sceneDidLoad()
     {
         name = "GAME"
         
-        // add the ocean to the scene
-        ocean = Ocean() // instantiates a new Ocean and allocates memory
-        ocean?.Start()
-        addChild(ocean!)
+        // add ocean1 to the scene and starts it at the Reset location
+        ocean1 = Ocean()
+        ocean1?.Start()
+        ocean1?.Reset()
+        addChild(ocean1!)
+        
+        // add ocean2 to the scene and starts it lower
+        ocean2 = Ocean()
+        ocean2?.Start()
+        ocean2?.position.y = -773
+        addChild(ocean2!)
     }
     
     
@@ -57,6 +65,7 @@ class GameScene: SKScene
     // triggered every frame - once every 16ms
     override func update(_ currentTime: TimeInterval)
     {
-        ocean?.Update()
+        ocean1?.Update()
+        ocean2?.Update()
     }
 }

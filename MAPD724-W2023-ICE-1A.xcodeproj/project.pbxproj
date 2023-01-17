@@ -35,6 +35,7 @@
 		E9FCE7F529761BE4002773A5 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FCE7E329761BE4002773A5 /* Dock51.ttf */; };
 		E9FCE7F829761DAC002773A5 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7F729761DAC002773A5 /* GameObject.swift */; };
 		E9FCE7FB297628DE002773A5 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7FA297628DE002773A5 /* Ocean.swift */; };
+		E9FCE7FD297631E5002773A5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7FC297631E5002773A5 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		E9FCE7E329761BE4002773A5 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
 		E9FCE7F729761DAC002773A5 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		E9FCE7FA297628DE002773A5 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		E9FCE7FC297631E5002773A5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FCE7FA297628DE002773A5 /* Ocean.swift */,
+				E9FCE7FC297631E5002773A5 /* Player.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E9FCE7BE29761795002773A5 /* GameScene.swift in Sources */,
 				E9FCE7FB297628DE002773A5 /* Ocean.swift in Sources */,
 				E9FCE7C029761795002773A5 /* GameViewController.swift in Sources */,
+				E9FCE7FD297631E5002773A5 /* Player.swift in Sources */,
 				E9FCE7B829761795002773A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
